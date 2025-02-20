@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.7",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.0.7"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "live": "npx live-server"
+  }
+}
