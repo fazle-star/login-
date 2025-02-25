@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <!~-- Font -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,12 +20,84 @@
       sizes="href"
       ="../src/favicon/logo-qodr.png"
     />
-
     <title>Form Izin Santri</title>
   </head>
-  <body>
-    <h1 class="text-7xl underline text-red-800 font-outfit font-bold">
-      Jangan Lupa Bikin Branch Baru!
-    </h1>
+  <body class="bg-[#0C7B93]">
+    <div class="flex justify-center items-center h-screen">
+      <div>
+        <!-- logo -->
+        <div class="flex justify-center items-center">
+          <img src="assets/png/logo-qodr.png" alt="" class="w-[180px] h-[26px]">
+        </div>
+        
+        <div class="px-[25px]">
+          <div class="bg-[#C9D2EF] h-[800] w-[360] mt-8 max-w-[500px] rounded-[20px]">
+            <div class="flex justify-center items-center  p-[20px]">
+              <h1 class="font-outfit text-[24px] font-bold capitalize text-[#142850] text-center">form perizinan</h1>
+            </div>
+  
+            <div class="px-[15px] flex flex-col gap-[5px]">
+              <!-- nama santri -->
+              <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
+                <img src="./assets/svg/icon-person.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput()">
+                <input type="text" placeholder="Nama Santri" id="myInput" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]">
+              </div>
+  
+              <!-- keperluan -->
+              <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
+                <img src="./assets/svg/icon-two-person.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput2()">
+                <input type="text" placeholder="Pergi Dengan Siapa" id="myInput2" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]">
+              </div>
+  
+              <!-- tujuan pergi -->
+              <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
+                <img src="./assets/svg/icon-pin-maps.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput3()">
+                <input type="text" placeholder="Tujuan Pergi" id="myInput3" class="bg-transparent  font-outfit text-[12px] outline-none placeholder-[#142850]">
+              </div>
+  
+              <!-- keperluan pergi -->
+              <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
+                <img src="./assets/svg/icon-note.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput4()">
+                <input type="text" placeholder="Keperluan Pergi" id="myInput4" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]">
+              </div>
+  
+              <div class="grid grid-cols-2 gap-[5px]">
+                <!-- tanggal pergi -->
+                <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
+                  <img src="./assets/svg/icon-date.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput5()">
+                  <input type="text" placeholder="Tanggal Pergi" id="myInput5" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]">
+                </div>
+                <!-- tanggal kembali -->
+                <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
+                  <img src="./assets/svg/icon-date.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput6()">
+                  <input type="text" placeholder="Tanggal Kembali" id="myInput6" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]">
+                </div>
+                <!-- waktu pergi -->
+                <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
+                  <img src="./assets/svg/icon-clock-seven.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput7()">
+                  <input type="text" placeholder="Waktu Pergi" id="myInput7" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]">
+                </div>
+                <!-- waktu kembali -->
+                <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
+                <img src="./assets/svg/icon-clock-five.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput8()">
+                <input type="text" placeholder="Waktu Kembali" id="myInput8" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]">
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-[25px] mb-[20px]">
+                <div class="text-[400px]">
+                  <p class="text-[12px] md:text-[14px] lg:text-[16px] text-center mt-[7px] font-outfit text-[#142850]">*Santri harus menjaga adab selama berada di luar pondok</p>
+                </div>
+  
+                <div class="">
+                  <button type="submit" class="bg-[#142850] hover:bg-[#C9D2EF] transition-all duration-150 rounded-[20px] w-full  py-[10px] text-white hover:text-[#142850] font-outfit cursor-pointer">Kirim</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="js/logoinput.js"></script>
 </html>
