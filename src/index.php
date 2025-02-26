@@ -36,51 +36,51 @@
               <h1 class="font-outfit text-[24px] font-bold capitalize text-[#142850] text-center">form perizinan</h1>
             </div>
   
-            <div class="px-[15px] flex flex-col gap-[5px]">
+            <form id="formPerizinan" action="submit_perizinan.php" method="POST" class="px-[15px] flex flex-col gap-[5px]">
               <!-- nama santri -->
               <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
                 <img src="./assets/svg/icon-person.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput()">
-                <input type="text" placeholder="Nama Santri" id="myInput" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]">
+                <input type="text" name="nama" placeholder="Nama Santri" id="myInput" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]" required>
               </div>
   
               <!-- keperluan -->
               <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
                 <img src="./assets/svg/icon-two-person.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput2()">
-                <input type="text" placeholder="Pergi Dengan Siapa" id="myInput2" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]">
+                <input type="text" name="pergi_dengan" placeholder="Pergi Dengan Siapa" id="myInput2" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]" required>
               </div>
   
               <!-- tujuan pergi -->
               <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
                 <img src="./assets/svg/icon-pin-maps.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput3()">
-                <input type="text" placeholder="Tujuan Pergi" id="myInput3" class="bg-transparent  font-outfit text-[12px] outline-none placeholder-[#142850]">
+                <input type="text" name="tujuan" placeholder="Tujuan Pergi" id="myInput3" class="bg-transparent  font-outfit text-[12px] outline-none placeholder-[#142850]" required>
               </div>
   
               <!-- keperluan pergi -->
               <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
                 <img src="./assets/svg/icon-note.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput4()">
-                <input type="text" placeholder="Keperluan Pergi" id="myInput4" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]">
+                <input type="text" name="keperluan" placeholder="Keperluan Pergi" id="myInput4" class="bg-transparent font-outfit text-[12px] outline-none placeholder-[#142850]" required>
               </div>
   
               <div class="grid grid-cols-2 gap-[5px]">
                 <!-- tanggal pergi -->
                 <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
                   <img src="./assets/svg/icon-date.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput5()">
-                  <input type="text" placeholder="Tanggal Pergi" id="myInput5" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]">
+                  <input type="date" name="tanggal_pergi" placeholder="Tanggal Pergi" id="myInput5" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]" required>
                 </div>
                 <!-- tanggal kembali -->
                 <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
                   <img src="./assets/svg/icon-date.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput6()">
-                  <input type="text" placeholder="Tanggal Kembali" id="myInput6" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]">
+                  <input type="date" name="tanggal_kembali" placeholder="Tanggal Kembali" id="myInput6" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]" required>
                 </div>
                 <!-- waktu pergi -->
                 <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
                   <img src="./assets/svg/icon-clock-seven.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput7()">
-                  <input type="text" placeholder="Waktu Pergi" id="myInput7" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]">
+                  <input type="time" name="waktu_pergi" placeholder="Waktu Pergi" id="myInput7" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]" required>
                 </div>
                 <!-- waktu kembali -->
                 <div class="bg-[#00A8CC] rounded-[10px] px-[15px] py-[10px] flex gap-[10px] items-center">
                 <img src="./assets/svg/icon-clock-five.svg" alt="" class="w-[20px] h-[20px] cursor-pointer" onclick="focusInput8()">
-                <input type="text" placeholder="Waktu Kembali" id="myInput8" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]">
+                <input type="time" name="waktu_kembali" placeholder="Waktu Kembali" id="myInput8" class="bg-transparent font-outfit text-[12px] w-full outline-none placeholder-[#142850]" required>
                 </div>
               </div>
 
@@ -93,7 +93,7 @@
                   <button type="submit" class="bg-[#142850] hover:bg-[#C9D2EF] transition-all duration-150 rounded-[20px] w-full  py-[10px] text-white hover:text-[#142850] font-outfit cursor-pointer">Kirim</button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
